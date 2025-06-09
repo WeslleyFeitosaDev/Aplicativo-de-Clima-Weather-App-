@@ -61,6 +61,7 @@ body{
     background-color: var(--cor2);
     color: var(--cor5);
     border-radius: 5px;
+    padding: 20px;
 }
 
 .box_city button{
@@ -111,5 +112,10 @@ body{
 }
 
 #mensagem_error{
+    color: var(--cor5);
+}
+
+.bx-cloud-sun{
+    font-size: 200px;
     color: var(--cor5);
 }
