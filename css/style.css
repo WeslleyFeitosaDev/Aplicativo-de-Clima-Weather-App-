@@ -127,5 +127,5 @@ body{
 }
 
 .mensagem_error_cidade_n_encontrada{
-    color: var(--cor3);
+    color: var(--cor3) !important;
 }
