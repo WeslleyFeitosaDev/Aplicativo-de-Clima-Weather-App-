@@ -5,17 +5,21 @@ let bnt_verificar_cidade=document.getElementById("bnt_verificar_cidade");
 let cidade=document.getElementById("cidade");
 let weather=document.getElementById("weather");
 let mensagem_error=document.getElementById("mensagem_error");
+let bx_cloud_sun=document.getElementById("bx-cloud-sun");
 
 bnt_verificar_cidade.addEventListener("click",()=>{
+    bx_cloud_sun.style.display="none";
     const city=input_city.value.trim();
 
     if(city == ""){
         mensagem_error.innerHTML="Digite alguma cidade no campo";
+        return;
     }
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${chave_api}&lang=pt_br&units=metric`)
-        .then(response =>{
-            if(!response.ok) throw new Error("Cidade não encontrada");
-            return response.json();
+        .then(Response =>{
+            if(!Response.ok){
+                mensagem_error.innerHTML="Cidade não encontrada";
+            }
         })
         .then(data => {
             const name=data.name;
@@ -27,8 +31,8 @@ bnt_verificar_cidade.addEventListener("click",()=>{
             weather.innerHTML=`${temp}°`;
             
         })
-            
-        
+    
+    input_city.value="";
 
     
 })
