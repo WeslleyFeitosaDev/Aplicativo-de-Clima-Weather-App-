@@ -49,22 +49,48 @@ body{
     background-color: #fca311;
 }
 
+.box_city{
+    width: 90%;
+}
+
+.box_city input{
+    width: 80%;
+    height: 40px;
+    outline: none;
+    border: none;
+    background-color: var(--cor2);
+    color: var(--cor5);
+    border-radius: 5px;
+}
+
+.box_city button{
+    width: 75px;
+    height: 40px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    color: var(--cor2);
+    transition: all .20s linear;
+
+}
+
+.box_city button:hover{
+    background-color: rgb(230, 230, 230);
+}
+
+.box_city input::placeholder{
+    color: var(--cor5);
+}
+
 .parte_cidade i{
     font-size: 35px;
     color: var(--cor4);
     margin-bottom: 10px;
 }
 
-.parte_cidade input{
-    width: 70%;
-    height: 50px;
-    outline: none;
-    border-radius: 5px;
-    border: none;
-    background-color: #e5e5e5;
-    color: var(--cor2);
-    padding: 10px;
-}
+
+
 
 .parte_view-weather{
     display: flex;
