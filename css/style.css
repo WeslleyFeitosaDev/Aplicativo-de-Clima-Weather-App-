@@ -115,7 +115,17 @@ body{
     color: var(--cor5);
 }
 
-.bx-cloud-sun{
+#bx-cloud-sun{
     font-size: 200px;
     color: var(--cor5);
+}
+
+#bx-badge-info{
+    display: none;
+    font-size: 200px;
+    color: var(--cor5);
+}
+
+.mensagem_error_cidade_n_encontrada{
+    color: var(--cor3);
 }
