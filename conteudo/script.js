@@ -1,5 +1,4 @@
 let chave_api="d0ea03ec240ab422be7eea7de28d4f4e";
-
 let input_city=document.getElementById("input_city");
 let bnt_verificar_cidade=document.getElementById("bnt_verificar_cidade");
 let cidade=document.getElementById("cidade");
