@@ -106,8 +106,7 @@ body{
 
 }
 
-<<<<<<< Updated upstream
-=======
+
 .name_city{
     display: flex;
     align-items: center;
@@ -120,7 +119,7 @@ body{
     color: var(--cor3);
 }
 
->>>>>>> Stashed changes
+
 .name_city p{
     font-size: 25px;
     color: var(--cor4);
