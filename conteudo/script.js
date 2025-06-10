@@ -17,6 +17,7 @@ bnt_verificar_cidade.addEventListener("click",()=>{
         weather.innerHTML = "";
         bx_location_alt.style.display="none";
         mensagem_error.innerHTML="Digite alguma cidade no campo";
+        bx_badge_info.style.display="none";
         return;
     }
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${chave_api}&lang=pt_br&units=metric`)
