@@ -106,17 +106,6 @@ body{
 
 }
 
-.name_city{
-    display: flex;
-    align-items: center;
-}
-
-#bx-location-alt{
-    margin-right: 5px;
-    font-size: 25px;
-    color: var(--cor3);
-}
-
 .name_city p{
     font-size: 25px;
     color: var(--cor4);
