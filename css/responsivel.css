@@ -1,0 +1,6 @@
+@media  (max-width: 500px){
+    .box-weather-app{
+        width: 350px !important;
+        height: 380px !important;
+    }
+}
